@@ -10,11 +10,9 @@ const Testing = () => {
         setsaveData(data.products)
     }
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '5rem' }}>
-            <Component1 saveData={saveData} handleSaveData={handleSaveData} />
-            {
-                <Component2 saveData={saveData} />
-            }
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '5rem', maxWidth: "100%", justifyContent: 'center', alignItems: 'center', margin: '1%', padding: '1%', border: 'green 3px solid' }}>
+            <Component1 saveData={saveData} handleSaveData={handleSaveData}/>
+            <Component2 saveData={saveData}/>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const Component1 = (props) => {
         props.handleSaveData(response)
     }
     return (
-        <div>
+        <div style={{display: 'flex', width: '750px', flexDirection: 'row', border: "red 2px solid", justifyContent: 'center', alignItems: 'center', height: "50px"}}>
             <button onClick={handleSearchData}>Search</button>
         </div>
     )
